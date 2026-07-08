@@ -29,9 +29,16 @@ src/
     list/page.tsx         # "/list" (サーバーコンポーネント、Prismaで直接クエリ)
     api/user/route.ts  # "/api/user" (登録API, GET/POST)
   components/
-    Wizard.tsx            # 4ステップのSPAウィザード本体(クライアントコンポーネント)
+    Wizard.tsx            # 4ステップの状態管理・ステップ切り替えを行う制御役(クライアントコンポーネント)
     Header.tsx            # ヘッダー(ナビ: 登録フォーム / 登録一覧)
     Footer.tsx            # フッター
+    wizard/                # ウィザードの各ステップ画面
+      types.ts              # FormData / Stepの型定義
+      StepIndicator.tsx      # 上部の進捗バー
+      NameStep.tsx           # 氏名入力画面
+      BirthDateStep.tsx      # 生年月日選択画面
+      ConfirmStep.tsx        # 確認画面
+      CompleteStep.tsx       # 完了画面
     ui/                    # shadcn/uiのコンポーネント(button, input, label, card)
   lib/
     prisma.ts             # PrismaClientのシングルトン(better-sqlite3アダプタ経由)
