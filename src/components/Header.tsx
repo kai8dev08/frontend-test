@@ -8,6 +8,12 @@ export default function Header() {
           登録フォーム
         </Link>
         <Link
+          href="/register"
+          className="text-sm text-muted-foreground hover:text-foreground"
+        >
+          新規登録
+        </Link>
+        <Link
           href="/list"
           className="text-sm text-muted-foreground hover:text-foreground"
         >

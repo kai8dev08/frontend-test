@@ -1,5 +1,37 @@
-import Wizard from "@/components/Wizard";
+import Link from "next/link";
+import {
+  Card,
+  CardContent,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
 
 export default function Home() {
-  return <Wizard />;
+  return (
+    <div className="flex flex-1 flex-col items-center justify-center gap-6 px-4 py-10">
+      <Card className="w-full max-w-md">
+        <CardHeader>
+          <CardTitle>登録フォーム</CardTitle>
+        </CardHeader>
+        <CardContent className="flex flex-col gap-3">
+          <Button
+            render={<Link href="/register" />}
+            nativeButton={false}
+            className="w-full"
+          >
+            新規登録
+          </Button>
+          <Button
+            render={<Link href="/list" />}
+            nativeButton={false}
+            variant="outline"
+            className="w-full"
+          >
+            登録一覧を見る
+          </Button>
+        </CardContent>
+      </Card>
+    </div>
+  );
 }

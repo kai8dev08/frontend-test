@@ -15,7 +15,8 @@
 
 | パス | 役割 |
 | --- | --- |
-| `/` | 登録ウィザード(氏名 → 生年月日 → 確認 → 完了) |
+| `/` | トップメニュー(「新規登録」「登録一覧を見る」への導線) |
+| `/register` | 登録ウィザード(氏名 → 生年月日 → 確認 → 完了) |
 | `/list` | 登録済みデータの一覧表示 |
 | `/api/user` | `GET`(一覧取得) / `POST`(新規登録)のAPIルート |
 
@@ -25,7 +26,8 @@
 src/
   app/
     layout.tsx          # 共通レイアウト(Header/Footerを読み込むだけ)
-    page.tsx             # "/" (Wizardを描画)
+    page.tsx             # "/" (トップメニュー: 新規登録 / 登録一覧への導線)
+    register/page.tsx     # "/register" (Wizardを描画)
     list/page.tsx         # "/list" (サーバーコンポーネント、Prismaで直接クエリ)
     api/user/route.ts  # "/api/user" (登録API, GET/POST)
   components/
@@ -112,7 +114,8 @@ npx prisma migrate deploy   # DBスキーマ適用(初回のみ)
 npm run dev
 ```
 
-- ウィザード: http://localhost:3000
+- トップメニュー: http://localhost:3000
+- ウィザード: http://localhost:3000/register
 - 登録一覧: http://localhost:3000/list
 
 ## 型・生成コード
