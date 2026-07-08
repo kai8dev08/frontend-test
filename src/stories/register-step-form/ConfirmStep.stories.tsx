@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/nextjs-vite";
-import ConfirmStep from "./ConfirmStep";
+import ConfirmStep from "@/components/register-step-form/ConfirmStep";
 
 const meta: Meta<typeof ConfirmStep> = {
   title: "RegisterStepForm/ConfirmStep",

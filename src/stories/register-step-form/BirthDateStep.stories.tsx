@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/nextjs-vite";
 import { useState } from "react";
-import BirthDateStep from "./BirthDateStep";
-import type { FormData } from "./types";
+import BirthDateStep from "@/components/register-step-form/BirthDateStep";
+import type { FormData } from "@/components/register-step-form/types";
 
 const meta: Meta<typeof BirthDateStep> = {
   title: "RegisterStepForm/BirthDateStep",

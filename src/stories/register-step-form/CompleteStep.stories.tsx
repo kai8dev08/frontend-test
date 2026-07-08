@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/nextjs-vite";
-import CompleteStep from "./CompleteStep";
+import CompleteStep from "@/components/register-step-form/CompleteStep";
 
 const meta: Meta<typeof CompleteStep> = {
   title: "RegisterStepForm/CompleteStep",

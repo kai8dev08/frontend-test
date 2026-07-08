@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/nextjs-vite";
-import StepIndicator from "./StepIndicator";
+import StepIndicator from "@/components/register-step-form/StepIndicator";
 
 const meta: Meta<typeof StepIndicator> = {
   title: "RegisterStepForm/StepIndicator",
