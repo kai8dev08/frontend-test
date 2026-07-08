@@ -122,7 +122,7 @@ npm run dev
 ```
 
 - トップメニュー: http://localhost:3000
-- ウィザード: http://localhost:3000/register
+- 登録ステップフォーム: http://localhost:3000/register
 - 登録一覧: http://localhost:3000/list
 
 ## 型・生成コード
