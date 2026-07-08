@@ -49,3 +49,6 @@ next-env.d.ts
 # AI agent instructions (kept local, not published)
 /CLAUDE.md
 /AGENTS.md
+
+*storybook.log
+storybook-static
